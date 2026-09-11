@@ -45,9 +45,9 @@ if submit_clearance:
             # The Personal, Direct-Address Reveal
             st.markdown(f"""
             ---
-            ### 📂 Open Letter to Enendu Somtochukwu Olivia
+            ### 📂 Open Letter to SOMTOCHUKWU 
             
-            Hey Somto / Olivia. If you are reading this right now, yes—this app was literally built because of you. 
+            Hey Somto. If you are reading this right now, yes—this app was literally built because of you. 
             
             Remember back then? The awkward first conversations, trying to remember what "coy" means, and the total cold shoulder afterwards? Honestly, it hurt back then. But looking back now, I realized something funny: **If you didn't give me that heavy attitude, would I have ever pushed myself to learn Python, build web apps, and code this?** Probably not. 
             
