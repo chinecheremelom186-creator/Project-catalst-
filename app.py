@@ -5,12 +5,12 @@ import time
 # 1. PAGE CONFIGURATION
 # ==========================================
 st.set_page_config(
-    page_title="Secure Clearance Terminal",
-    page_icon="🔐",
+    page_title="System Clearance Portal",
+    page_icon="⚡",
     layout="centered"
 )
 
-st.title("🔐 Departmental Clearance Terminal")
+st.title("⚡ Departmental Clearance Terminal")
 st.caption("Restricted Portal | 100L Medical Surgery Database")
 st.write("---")
 
@@ -34,26 +34,24 @@ if submit_clearance:
         
         # Checking if the special name is entered
         if "somto" in name_input or "somtochukwu" in name_input:
-            st.error("⚠️ SYSTEM ALERT: ANOMALY DETECTED IN DATABASE ⚠️")
+            st.success("✨ SPECIAL RECORD FOUND: PLOT TWIST CATALYST ✨")
             
-            with st.spinner("Decrypting restricted root-level developer logs..."):
+            with st.spinner("Accessing origin milestone logs..."):
                 time.sleep(1.2) # Adds dramatic suspense
                 
-            st.success("Access Granted: Special Origin File Unlocked.")
-            
-            # The Easter Egg Reveal
+            # The Confident, High-Value Easter Egg Reveal
             st.markdown("""
             ---
-            ### 📂 Secret File: Project Catalyst
+            ### 📂 Milestone File: The Origin of Power
             * **Subject:** Somtochukwu
-            * **Classification:** Elite Origin Source / Unofficial Muse
+            * **Status:** Unintentional Muse & Coding Catalyst
             
-            #### 📊 System Activity Log:
-            1. **Initial Vector:** Awkward initial greeting (Vocabulary error: *"Are you coy?"*).
-            2. **Friction Event:** Prolonged social silence and campus cold shoulder.
-            3. **The Core Transformation:** Severe emotional friction converted directly into raw programming power, Python syntax mastery, GitHub commits, and mobile-device debugging.
+            #### 📊 Growth & Development Log:
+            1. **The Encounter:** An unforgettable first attempt at conversation (complete with vocabulary tests like *"Are you coy?"*).
+            2. **The Plot Twist:** Navigating the unpredictable social dynamics of 100L Med-Surg.
+            3. **The Transformation:** Channeling all that energy away from social stress and straight into mastering Python, GitHub deployments, and building web apps.
             
-            > **Developer Note:** *"The silence wasn't a loss; it was the compilation error that forced me to rewrite my entire operating system. App built, deployed, and mastered."*
+            > **Developer Note:** *"Looking back, every awkward silence and closed door was just the universe forcing me to level up. What started as frustration turned into a genuine passion for programming. App built, deployed, and mastered with zero regrets."*
             ---
             """)
             st.balloons()
@@ -62,10 +60,10 @@ if submit_clearance:
             # Standard output for anyone else
             st.success(f"Access Verified for: **{user_query}**")
             st.write("Status: Standard 100L student profile active. Cleared for CBT exams, long lecture hours, and general survival.")
-            st.info("No anomalies or classified developer roots found for this user.")
+            st.info("No custom milestone logs found for this user.")
 
 # ==========================================
 # 4. FOOTER
 # ==========================================
 st.write("---")
-st.markdown("<div style='text-align: center; color: gray;'>System secured by Code & Spite</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: gray;'>Engineered with Grit, Code, and Growth</div>", unsafe_allow_html=True)
