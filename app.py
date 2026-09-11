@@ -1,40 +1,11 @@
-import streamlit as st
-import time
-
-# ==========================================
-# 1. PAGE CONFIGURATION
-# ==========================================
-st.set_page_config(
-    page_title="MBBS 031 Terminal",
-    page_icon="⚡",
-    layout="centered"
-)
-
-st.title("⚡ MBBS 031: Clearance & Reality Terminal")
-st.caption("Restricted Portal | 100L Medical Surgery Database")
-st.write("---")
-
-# ==========================================
-# 2. INTERACTIVE QUERY INTERFACE
-# ==========================================
-st.info("Enter identity credentials below to query system access logs.")
-
-with st.form("clearance_form"):
-    user_query = st.text_input("Enter Full Name / Alias:", placeholder="Type a name to check database...")
-    submit_clearance = st.form_submit_button("🔍 Execute Query")
-
-# ==========================================
-# 3. LOGIC & CONDITIONAL REVEAL
-# ==========================================
-if submit_clearance:
-    if not user_query.strip():
-        st.warning("⚠️ Please input a valid name before running the query.")
-    else:
-        name_input = user_query.strip().lower()
+        # Checking for any combination of her names (Somto, Somtochukwu, Olivia, Enendu)
+        name_tokens = name_input.split()
         
-        # Checking if the special name is entered
-        if "somto" in name_input or "somtochukwu" in name_input:
-            st.success("✨ CLASSIFIED FILE: DIRECT MESSAGE TO SOMTOCHUKWU ✨")
+        is_somto = any(token in name_input for token in ["somto", "somtochukwu", "enendu", "olivia"])
+        
+        # To make sure it triggers specifically for her (e.g., if someone types just 'olivia' or 'somto')
+        if is_somto:
+            st.success("✨ CLASSIFIED FILE: DIRECT MESSAGE TO THE INSPIRATION ✨")
             
             with st.spinner("Decrypting personal developer log..."):
                 time.sleep(1.2) # Adds dramatic suspense
@@ -42,9 +13,9 @@ if submit_clearance:
             # The Personal, Direct-Address Reveal
             st.markdown(f"""
             ---
-            ### 📂 Open Letter to Somtochukwu
+            ### 📂 Open Letter to Enendu Somtochukwu Olivia
             
-            Hey Somto. If you are reading this right now, yes—this app was literally built because of you. 
+            Hey Somto / Olivia. If you are reading this right now, yes—this app was literally built because of you. 
             
             Remember back then? The awkward first conversations, trying to remember what "coy" means, and the total cold shoulder afterwards? Honestly, it hurt back then. But looking back now, I realized something funny: **If you didn't give me that heavy attitude, would I have ever pushed myself to learn Python, build web apps, and code this?** Probably not. 
             
@@ -54,15 +25,3 @@ if submit_clearance:
             ---
             """)
             st.balloons()
-            
-        else:
-            # Standard output for anyone else in MBBS 031
-            st.success(f"Access Verified for: **{user_query}**")
-            st.write("Status: Verified MBBS 031 course mate profile active. Cleared for CBT exams, long lecture hours, surviving group practicals, and general medical school survival.")
-            st.info("No custom plot-twist logs found for this user. You're safe!")
-
-# ==========================================
-# 4. FOOTER
-# ==========================================
-st.write("---")
-st.markdown("<div style='text-align: center; color: gray;'>Engineered for MBBS 031 with Grit, Code, and Total Acceptance</div>", unsafe_allow_html=True)
