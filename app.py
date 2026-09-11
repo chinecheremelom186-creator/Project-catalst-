@@ -5,12 +5,12 @@ import time
 # 1. PAGE CONFIGURATION
 # ==========================================
 st.set_page_config(
-    page_title="System Clearance Portal",
+    page_title="MBBS 031 Terminal",
     page_icon="⚡",
     layout="centered"
 )
 
-st.title("⚡ Departmental Clearance Terminal")
+st.title("⚡ MBBS 031: Clearance & Reality Terminal")
 st.caption("Restricted Portal | 100L Medical Surgery Database")
 st.write("---")
 
@@ -34,36 +34,35 @@ if submit_clearance:
         
         # Checking if the special name is entered
         if "somto" in name_input or "somtochukwu" in name_input:
-            st.success("✨ SPECIAL RECORD FOUND: PLOT TWIST CATALYST ✨")
+            st.success("✨ CLASSIFIED FILE: DIRECT MESSAGE TO SOMTOCHUKWU ✨")
             
-            with st.spinner("Accessing origin milestone logs..."):
+            with st.spinner("Decrypting personal developer log..."):
                 time.sleep(1.2) # Adds dramatic suspense
                 
-            # The Confident, High-Value Easter Egg Reveal
-            st.markdown("""
+            # The Personal, Direct-Address Reveal
+            st.markdown(f"""
             ---
-            ### 📂 Milestone File: The Origin of Power
-            * **Subject:** Somtochukwu
-            * **Status:** Unintentional Muse & Coding Catalyst
+            ### 📂 Open Letter to Somtochukwu
             
-            #### 📊 Growth & Development Log:
-            1. **The Encounter:** An unforgettable first attempt at conversation (complete with vocabulary tests like *"Are you coy?"*).
-            2. **The Plot Twist:** Navigating the unpredictable social dynamics of 100L Med-Surg.
-            3. **The Transformation:** Channeling all that energy away from social stress and straight into mastering Python, GitHub deployments, and building web apps.
+            Hey Somto. If you are reading this right now, yes—this app was literally built because of you. 
             
-            > **Developer Note:** *"Looking back, every awkward silence and closed door was just the universe forcing me to level up. What started as frustration turned into a genuine passion for programming. App built, deployed, and mastered with zero regrets."*
+            Remember back then? The awkward first conversations, trying to remember what "coy" means, and the total cold shoulder afterwards? Honestly, it hurt back then. But looking back now, I realized something funny: **If you didn't give me that heavy attitude, would I have ever pushed myself to learn Python, build web apps, and code this?** Probably not. 
+            
+            So in a weird way, thank you. You were the catalyst. Even now, I still think about you—not for pleasure or any romantic drama, but as a reminder of rejection, disassociation, and how to channel pain into pure personal power. I'm still rooting for you, wherever you go, but I've officially upgraded my own operating system.
+            
+            > **Developer Note:** *"Though I went through hard times just over Somtochukwu alone 😂, how on earth am I going to manage the entire MBBS 031 class? 🫴😅 That is life and part of the journey—everybody can't like me, and I've finally accepted that in my head. App built, deployed, and mastered."*
             ---
             """)
             st.balloons()
             
         else:
-            # Standard output for anyone else
+            # Standard output for anyone else in MBBS 031
             st.success(f"Access Verified for: **{user_query}**")
-            st.write("Status: Standard 100L student profile active. Cleared for CBT exams, long lecture hours, and general survival.")
-            st.info("No custom milestone logs found for this user.")
+            st.write("Status: Verified MBBS 031 course mate profile active. Cleared for CBT exams, long lecture hours, surviving group practicals, and general medical school survival.")
+            st.info("No custom plot-twist logs found for this user. You're safe!")
 
 # ==========================================
 # 4. FOOTER
 # ==========================================
 st.write("---")
-st.markdown("<div style='text-align: center; color: gray;'>Engineered with Grit, Code, and Growth</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: gray;'>Engineered for MBBS 031 with Grit, Code, and Total Acceptance</div>", unsafe_allow_html=True)
